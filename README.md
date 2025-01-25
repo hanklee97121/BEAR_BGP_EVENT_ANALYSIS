@@ -1,4 +1,4 @@
-# Amazon_BGP_LLM_Reasoning
+# BGP_LLM_Reasoning
 Use LLM to explain a BGP anomaly event and create a report
 
 Net_Graph_2.ipynb:
