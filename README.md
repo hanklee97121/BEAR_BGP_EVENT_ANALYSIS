@@ -8,13 +8,13 @@ Net_Graph_2.ipynb:
   Code to extract all AS paths related to an event from all collector (either IP prefix available or not).
 
 LLM_BGP_Anomaly_Explaination.ipynb:
-  Code of the actual framework that takes events' data and output reports
+  Code of the naive framework
 
 LLM_BGP_Anomaly_Explaination_few_collector.ipynb:
   Code of the framework using partial data
 
-LLM_BGP_Anomaly_Explaination_multi_step_multi_agent.ipynb:
-  Code of the framework with multi-step and multi-agent to generate BGP event report.
+**LLM_BGP_Anomaly_Explaination_multi_step_multi_agent.ipynb:**
+  Code of the framework with multi-step CoT and self-consistency to generate BGP event report. Best Approach
 
 LLM_generate_BGP_Event_Data.ipynb
   Code of the framework to generate synthetic BGP anomaly event
