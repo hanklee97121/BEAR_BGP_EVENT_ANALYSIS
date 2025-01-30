@@ -1,4 +1,4 @@
-# BGP_LLM_Reasoning
+# BEAR: BGP Event Analysis and Reporting
 Use LLM to explain a BGP anomaly event and create a report
 
 LLM_BGP_Anomaly_Explaination_few_collector.ipynb:
