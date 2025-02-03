@@ -34,6 +34,7 @@ class BEAR_few_collector(LLM_Module):
             save_path: directory to save results/reports
             read_path: if provided, we read BGP data from this directory instead of using bgpstream to retrieve BGP data (if we already
                         retrieved relevant BGP data before and saved here)
+            n_collector: Int, number of collectors' data you want to use when generating report.
         '''
         super().__init__(model=model) #initialize LLM module
         self.n_collector = n_collector
@@ -65,7 +66,6 @@ class BEAR_few_collector(LLM_Module):
             end_time = event['End'].split(';')[0] if event['End'] else None
             event_type = event['Event Type'].split(';')[0] if event['Event Type'] else None
             self.generate_single_event(start_time=start_time, file_save_prefix=str(i)+"_", IP=IP, AS=AS, end_time=end_time, Event_Type=event_type)
-            break
         return None
             
     def generate_single_event(self, start_time, file_save_prefix="", IP=None, AS=None, end_time=None, Event_Type=None):
