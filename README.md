@@ -51,7 +51,8 @@ The main difference between run **BEAR** on full data and limited data scenario 
 ## **Files and Structure**  
 
 ### **Core Components**  
-- **`LLM_Module.py`** – Handles all LLM-specific operations. To switch to a different LLM, modify this file.  
+- **`LLM_Module.py`** – Handles all LLM-specific operations. To switch to a different LLM, modify this file.
+  -  **`LLM_Module_Bedrock.py`** - This module provides an implementation for calling available LLM APIs using Amazon Bedrock. To use this module in your project, please update your import statement from `from LLM_Module import LLM_Module` to `from LLM_Module_Bedrock import LLM_Module`.
 - **`BEAR.py`** – Main script implementing the **BEAR** method for generating reports on **BGP anomaly events**.  
 - **`BEAR_few_collector.py`** – A variation of **BEAR** designed to work with **limited data availability**.  
 
